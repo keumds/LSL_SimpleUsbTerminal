@@ -12,6 +12,7 @@ import android.os.Build;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Looper;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
@@ -136,7 +137,7 @@ public class SerialService extends Service implements SerialListener {
         // items already in event queue (posted before detach() to mainLooper) will end up in queue1
         // items occurring later, will be moved directly to queue2
         // detach() and mainLooper.post run in the main thread, so all items are caught
-        listener = null;
+        // listener = null;  // DS
     }
 
     private void createNotification() {
@@ -240,6 +241,9 @@ public class SerialService extends Service implements SerialListener {
                                 datas = lastRead.datas;
                                 lastRead.init(); // (2)
                             }
+
+                            Log.e("tt","tt");
+
                             if (listener != null) {
                                 listener.onSerialRead(datas);
                             } else {

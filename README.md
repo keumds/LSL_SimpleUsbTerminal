@@ -1,8 +1,10 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/83070da7805b4899820e285d2f7847b9)](https://www.codacy.com/manual/kai-morich/SimpleUsbTerminal?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kai-morich/SimpleUsbTerminal&amp;utm_campaign=Badge_Grade)
 
+I will be add LSL Sender
 
-# Origin from
-https://github.com/kai-morich/SimpleUsbTerminal
+# Origin From
+  https://github.com/kai-morich/SimpleUsbTerminal
+  https://github.com/labstreaminglayer/liblsl-Java
 
 # SimpleUsbTerminal
 
